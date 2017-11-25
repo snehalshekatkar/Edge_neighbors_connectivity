@@ -8,7 +8,10 @@ from itertools import product
 #g = gt.collection.data['dolphins']
 #g = gt.collection.data['football']
 #g = gt.collection.data['netscience']
-g = gt.collection.data['polblogs']
+#g = gt.collection.data['polblogs']
+#g = gt.collection.data['power']
+g = gt.load_graph('sbm2blocks.gt')
+gt.graph_draw(g)
 
 adj_mat = gt.adjacency(g).todense()
 
